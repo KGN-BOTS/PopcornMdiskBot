@@ -50,7 +50,8 @@ async def cb_delete_handler(c,m):
         print(e)
         txt = await m.message.edit(f"Some error occurred while deleting", disable_web_page_preview=True)
 
-    await auto_delete(m.message, txt)
+    await asyncio.sleep(15)
+           await k.delete()
 
 async def replace_username(text):
     usernames = re.findall("([@#][A-Za-z0-9_]+)", text)
@@ -69,7 +70,8 @@ async def replace_username(text):
 @Client.on_callback_query(filters.regex(r"^close"))
 async def cb_close_handler(c,m):
     await m.answer()
-    await m.message.delete()
+    await asyncio.sleep(15)
+           await k.delete()
 
 
 @Client.on_callback_query(filters.regex(r"^spolling"))
@@ -83,7 +85,8 @@ async def send_spell_checker(bot, query):
     if results is None:
         await query.answer("Movie not found in database", show_alert=True)
     
-    await auto_delete(query.message, results)
+    await asyncio.sleep(15)
+           await k.delete()
 
 # Next Button
 
@@ -147,7 +150,8 @@ async def next_btn_cb_handler(client: Client, query: CallbackQuery):
             except Exception as e:
                 print(e)
 
-        await auto_delete(query.message, txt)
+        await asyncio.sleep(15)
+           await k.delete()
     return
 
         
@@ -222,5 +226,6 @@ async def back_btn_cb_handler(client: Client, query: CallbackQuery):
             except Exception as e:
                 print(e)
 
-        await auto_delete(query.message, txt)
+        await asyncio.sleep(15)
+           await k.delete()
     return   
