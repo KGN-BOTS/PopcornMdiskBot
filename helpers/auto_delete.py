@@ -7,7 +7,7 @@ async def auto_delete(txt=None, m=None):
 
             if txt and m or not None:
             # Waiting for the time to pass.
-                await asyncio.sleep(config.AUTO_DELETE_TIME)
+                await asyncio.sleep(300)
                 if m is not None:
                     await m.delete()
                 if txt is not None:
