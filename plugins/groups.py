@@ -22,7 +22,8 @@ async def group_handler(c: Client, m:Message):
             reply_markup = await get_movies(query=query, m=m)
             if reply_markup is None or reply_markup is False:
                 await send_movie_group_handler(m=m, query=query, reply_markup=reply_markup)
-    await auto_delete(m, None) 
+    await asyncio.sleep(15)
+           await k.delete()
     return
     
 
