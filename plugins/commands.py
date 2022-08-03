@@ -14,13 +14,13 @@ from pyrogram.types import (
 async def start_message(c,m):
     collection.create_index([("title" , TEXT),("caption", TEXT)],name="movie_index")
     if len(m.command) == 1:
-        return await m.reply_photo("https://telegra.ph/file/f35d8b79281781574e6f4.jpg",
+        return await m.reply_photo("https://te.legra.ph/file/5324137f491dd1e8c65fd.jpg",
             caption=START_MESSAGE.format(m.from_user.mention),
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Bot Dev", url='https://t.me/RoyalKrrishna'),
-                        InlineKeyboardButton("Our Group", url='https://t.me/iPopcornMovieGroup')
+                        InlineKeyboardButton("Bot Dev", url='https://t.me/Akshay_Chand'),
+                        InlineKeyboardButton("Our Group", url='https://t.me/iPapkornMovieGroup')
                     ]
                 ]
             )
