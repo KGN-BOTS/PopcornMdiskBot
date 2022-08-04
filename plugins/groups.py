@@ -27,7 +27,7 @@ async def group_handler(c: Client, m:Message):
     
 
 async def group_send_handler(c: Client, m:Message):
-    txt = await m.reply('Processing...')
+    txt = await m.reply('Searching🔎...')
     id  = m.command[1]
     result = collection.find_one({'_id': ObjectId(id)})
     caption = result['caption']
