@@ -4,6 +4,6 @@ from .database import collection
 
 @Client.on_message(filters.command('total') & filters.chat(ADMINS))
 async def total_message(c,m):
-    txt= await m.reply('Processing...')
+    txt= await m.reply('Searching🔎...')
     total = collection.find().count()
     await txt.edit(str(total) + " Files Total")
