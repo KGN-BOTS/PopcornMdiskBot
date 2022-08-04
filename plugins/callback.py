@@ -81,7 +81,7 @@ async def send_spell_checker(bot, query):
     
     results = await get_movies(movie_, query.message)
     if results is None:
-        await query.answer("Movie not found in database", show_alert=True)
+        await query.answer("Movie not found in database Request to admin @iPapkornAdminbot", show_alert=True)
     
     await auto_delete(query.message, results)
 
@@ -105,7 +105,7 @@ async def next_btn_cb_handler(client: Client, query: CallbackQuery):
             id = data['buttons'][int(index)+1][0]['id']
             cap = data['buttons'][int(index)+1][0]['caption']
             buttons.append(
-                [InlineKeyboardButton("Help", url="https://t.me/RoyalKrrishna")]
+                [InlineKeyboardButton("🧐 Help", url="https://t.me/iPapkornAdminbot")]
             )
             buttons.append(
                 [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}")]
@@ -128,7 +128,7 @@ async def next_btn_cb_handler(client: Client, query: CallbackQuery):
             cap = data['buttons'][int(index)+1][0]['caption']
             id = data['buttons'][int(index)+1][0]['id']
             buttons.append(
-                [InlineKeyboardButton("Help", url="https://t.me/RoyalKrrishna")]
+                [InlineKeyboardButton("🧐 Help", url="https://t.me/iPapkornAdminbot")]
             )
             buttons.append(
                 [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
@@ -176,7 +176,7 @@ async def back_btn_cb_handler(client: Client, query: CallbackQuery):
             cap = data['buttons'][int(index)-1][0]['caption']
             id = data['buttons'][int(index)-1][0]['id']
             buttons.append(
-                [InlineKeyboardButton("Help", url="https://t.me/RoyalKrrishna")]
+                [InlineKeyboardButton("🧐 Help", url="https://t.me/iPapkornAdminbot")]
             )
             buttons.append(
                     [InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
@@ -203,7 +203,7 @@ async def back_btn_cb_handler(client: Client, query: CallbackQuery):
             cap = data['buttons'][int(index)-1][0]['caption']
             id = data['buttons'][int(index)-1][0]['id']
             buttons.append(
-                [InlineKeyboardButton("Help", url="https://t.me/RoyalKrrishna")]
+                [InlineKeyboardButton("🧐 Help", url="https://t.me/iPapkornAdminbot")]
             )
             buttons.append(
                 [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
