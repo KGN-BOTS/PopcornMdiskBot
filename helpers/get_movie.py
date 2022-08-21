@@ -29,7 +29,7 @@ async def get_movies(query:str, m:Message):
             }
         else:
             buttons = [
-                [InlineKeyboardButton("🧐 Help", url="https://t.me/iPapkornAdminbot")],
+                [InlineKeyboardButton("🧐 Help", url="https://t.me/Iamit09")],
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             ]
 
@@ -46,7 +46,7 @@ async def get_movies(query:str, m:Message):
 
         buttons = []
         buttons.append(
-                [InlineKeyboardButton("🧐 Help", url="https://t.me/iPapkornAdminbot")]
+                [InlineKeyboardButton("🧐 Help", url="https://t.me/Iamit09")]
             )
         buttons.append(
             [InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_0_{keyword}")]
