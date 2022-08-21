@@ -19,8 +19,8 @@ async def start_message(c,m):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Bot Dev", url='https://t.me/Akshay_Chand'),
-                        InlineKeyboardButton("Our Group", url='https://t.me/iPapkornMovieGroup')
+                        InlineKeyboardButton("Bot Dev", url='https://t.me/Iamit09'),
+                        InlineKeyboardButton("Our Group", url='https://t.me/theamozonflix')
                     ]
                 ]
             )
