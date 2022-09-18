@@ -4,7 +4,8 @@
 
 #### Deploy To Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RoyalKrrishna/Newfilter)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Amit00999/
+PopcornMdisk-Bot)
 
 ##### Required Variables
 
