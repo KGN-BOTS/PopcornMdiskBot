@@ -81,7 +81,7 @@ async def send_spell_checker(bot, query):
     
     results = await get_movies(movie_, query.message)
     if results is None:
-        await query.answer("Movie not found in database Request to admin @iPapkornAdminbot", show_alert=True)
+        await query.answer("Movie not found in database Request to admin @Iamit09", show_alert=True)
     
     await auto_delete(query.message, results)
 
